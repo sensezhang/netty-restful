@@ -1,0 +1,11 @@
+#! /bin/sh
+
+mainCls=com.sense.cloud.logCollecter.server.App
+apphome=/home/cloud/log-collecter
+chmod +x -R $apphome
+
+jvmopts="-Xms3G -Xmx3G -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=1 "
+classpath=$apphome/conf:$apphome/lib/*
+
+#开始启动
+exec java $jvmopts -cp $classpath $mainCls 
