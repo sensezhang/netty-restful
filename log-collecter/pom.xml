@@ -16,7 +16,7 @@
         <maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <springframework.version>4.2.6.RELEASE</springframework.version>
-        <netty-version>4.1.1.Final</netty-version>
+        <netty-version>4.1.42.Final</netty-version>
         <resteasy.version>3.0.19.SP4</resteasy.version>
     </properties>
 
